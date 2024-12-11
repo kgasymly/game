@@ -1,4 +1,4 @@
-package ru.itis.game;
+package ru.itis.game.model;
 
 public class Game {
     private int fieldWidth;

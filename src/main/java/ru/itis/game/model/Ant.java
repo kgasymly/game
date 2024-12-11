@@ -1,5 +1,4 @@
-package ru.itis.game;
-import java.util.Random;
+package ru.itis.game.model;
 
 public class Ant extends Entity {
     public Ant() {

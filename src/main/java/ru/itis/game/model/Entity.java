@@ -1,4 +1,4 @@
-package ru.itis.game;
+package ru.itis.game.model;
 
 public class Entity {
     protected String name;
@@ -21,7 +21,7 @@ public class Entity {
     public void move() {}
 
     public String toString() {
-        return  this.name + " "+ this.x + ", " + this.y + ")";
+        return  this.name + " ("+ this.x + ", " + this.y + ")";
     }
 
     public String getName() {
@@ -48,7 +48,7 @@ public class Entity {
         this.y = y;
     }
 
-    public void setFieldSize(int width, int heigth) {
+    public static void setFieldSize(int width, int heigth) {
         fieldWidth = width;
         fieldHeigth = heigth;
     }
