@@ -1,5 +1,6 @@
 package ru.itis.game.model;
 
+
 public class Game {
     private int fieldWidth;
     private int fieldHeigth;
