@@ -29,8 +29,8 @@ public class Game {
             }
             for (int i = 0; i < players.length; i++) {
                 if (players[i].x >= finishX
-                        && players[i].x <= finishX + finishFieldWight
-                        && players[i].y >= finishY && players[i].y <= finishY + finishFieldHeight) {
+                        && players[i].getX() <= finishX + finishFieldWight
+                        && players[i].getY() >= finishY && players[i].getY() <= finishY + finishFieldHeight) {
                     System.out.println(players[i]);
                     return players[i];
                 }
