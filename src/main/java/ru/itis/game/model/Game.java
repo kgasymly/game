@@ -9,6 +9,7 @@ public class Game {
     private int finishX;
     private int finishY;
     private Entity[] players;
+    private int steps = 0;
 
     public Game() {
     }
@@ -21,6 +22,8 @@ public class Game {
         this.finishX = finishX;
         this.finishY = finishY;
         this.players = players;
+        this.steps = steps;
+        Entity.setFieldSize(fieldWidth, fieldHeigth);
     }
 
     public Entity start() {
@@ -28,6 +31,7 @@ public class Game {
             for (int i = 0; i < players.length; i++) {
                 players[i].move();
             }
+            steps++;
             for (int i = 0; i < players.length; i++) {
                 if (players[i].x >= finishX
                         && players[i].getX() <= finishX + finishFieldWight
