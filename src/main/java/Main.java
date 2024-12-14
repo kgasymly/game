@@ -7,7 +7,7 @@ public class Main {
         int finishFieldHeight = 10;
         int finishX = 495;
         int finishY = 495;
-        Entity[] entities = new Entity[1];
+        Entity[] entities = new Entity[4];
         entities[0] = new Ant(0 , 0);
         entities[1] = new Turtle(0,0);
         entities[2] = new Grasshopper(0,0);
